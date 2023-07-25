@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDC9C9"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ActivityConsulta">
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#65939393"
+        android:text="Regresar"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_baseline_arrow_back_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/txtid"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autoText="false"
+            android:backgroundTint="@color/white"
+            android:ems="8"
+            android:hint="INGRESE EL ID"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnbuscar"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radiusbutton"
+            android:text="Buscar"
+            android:textColor="@color/black"
+            app:icon="@android:drawable/ic_menu_search"
+            app:iconTint="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtinformacion"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
